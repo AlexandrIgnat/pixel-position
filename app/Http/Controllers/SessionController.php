@@ -34,6 +34,6 @@ class SessionController extends Controller
     {
         Auth::logout();
 
-        return redirect('/laracast_home');
+        return redirect('/');
     }
 }
