@@ -34,6 +34,8 @@
                 <div class="space-x-6 font-bold flex">
                     <a href="/jobs/create">Post a Job</a>
 
+                    <a href="/profile">Profile</a>
+
                     <form method="POST" action="/logout">
                         @csrf
                         @method('DELETE')
@@ -41,6 +43,7 @@
                         <button>Log Out</button>
                     </form>
                 </div>
+
             @endauth
 
             @guest
@@ -49,6 +52,8 @@
                     <a href="/login">Log In</a>
                 </div>
             @endguest
+
+
         </nav>
 
         <main class="mt-10 max-w-[986px] mx-auto">
